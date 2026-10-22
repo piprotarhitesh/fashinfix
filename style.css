@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Amazon Ember", Arial, sans-serif;
+}
+
+.body {
+    width: 100%;
+    background-color: #e3d5ca;
+}
+
+.navbar {
+    background-color: #f5ebe0;
+}
+
+.navbar-brand h1 {
+    color: #9c6644;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.nav-link button {
+    padding: 3px 10px;
+    text-align: center;
+    border-radius: 30px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #9c6644;
+    background-color: #cb997e;
+    border: none;
+}
+
+.nav-item a {
+    color: #9c6644;
+}
+
+.navbar-nav {
+    font-size: 20px;
+    text-align: right;
+    margin-left: auto;
+}
+
+.carousel-inner {
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+}
+
+.gender {
+    width: 90%;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.gender .men {
+    width: 31%;
+    height: 250px;
+    padding: 100px 165px;
+    background-image: url("men.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gender .women {
+    width: 31%;
+    height: 250px;
+    padding: 100px 150px;
+    background-image: url("women.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gender .kid {
+    width: 31%;
+    height: 250px;
+    padding: 100px 180px;
+    background-image: url("kid.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gender button {
+    margin: 0 auto;
+    padding: 5px;
+    align-items: center;
+    color: #9e2a2b;
+    background-color: #cb997ed9;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.gender button:hover {
+    margin: 0 auto;
+    padding: 5px;
+    align-items: center;
+    color: #774936;
+    background-color: #bc8a5fee;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background-color: #9c664467;
+}
+
+.footer-content {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-around;
+    color: #432818;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .carousel-inner {
+        margin: 0 auto;
+        height: 400px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .gender {
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .gender .men {
+        width: 45%;
+        height: 250px;
+        padding: 100px 130px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .gender .women {
+        width: 45%;
+        height: 250px;
+        padding: 100px 130px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .gender .kid {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 45%;
+        height: 250px;
+        padding: 100px 130px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .gender button:hover {
+        margin: 0 auto;
+        padding: 5px;
+        align-items: center;
+        background-color: transparent;
+        font-size: 30px;
+        font-weight: 400;
+    }
+
+    .footer-content {
+        width: 80%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .nav-link button {
+        border-radius: 0;
+        background-color: transparent;
+    }
+
+    .carousel-inner {
+        margin: 0 auto;
+        height: 250px;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .gender {
+        width: 100%;
+        margin: 0 auto;
+        padding: 60px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .gender .men {
+        margin: 0 auto;
+        width: 95%;
+        height: 250px;
+        padding: 100px 145px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .gender .women {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 95%;
+        height: 250px;
+        padding: 100px 130px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .gender .kid {
+        margin: 0 auto;
+        margin-top: 40px;
+        width: 95%;
+        height: 250px;
+        padding: 100px 150px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .footer-content {
+        width: 60%;
+        padding-top: 30px;
+        font-size: 12px;
+        padding-bottom: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+}
